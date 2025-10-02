@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> SURGE </title>
+    <link rel="icon" type="image/png" href="img/website_logo.png">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/resources.css">
+    <link rel="stylesheet" href="css/developers.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Lilita+One&display=swap" rel="stylesheet">
+
+
+    <!-- JAVASCRIPT -->
+    <script src="javascript/header.js"></script>
+</head>
+
+<body onload="initializeApp()">
+    <!-- HEADER -->
+    <header class="header-container">
+  <div class="header">
+    <!-- Hamburger (mobile only) -->
+    <div class="hamburger" onclick="toggleMenu(this)">
+      ☰
+    </div>
+
+    <!-- Links -->
+    <div class="header-links">
+      <nav>
+        <ul>
+          <li><a href="#home" class="links">HOME</a></li>
+          <li><a href="#about" class="links">ABOUT</a></li>
+          <li><a href="#features" class="links">FEATURES</a></li>
+          <li><a href="#resources" class="links">RESOURCES</a></li>
+          <li><a href="#developers" class="links">DEVELOPERS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+
+    <!-- HERO -->
+    <section class="hero-section" id="home">
+         <div class="top-gradient"></div>
+
+        <div class="centered-content">
+            <img id="logo" src="img/website_logo.png" alt="logo">
+            
+            <div class="home-btn">
+                <a href="https://tinyurl.com/5y6php7r"><button class="play-btn" type="button">PLAY NOW FOR FREE</button></a>
+            </div>
+        </div>
+
+        <img class="scroll-down" src="img/scroll-down.png" alt="Scroll Down" onclick="scrollToSection()">
+        <div class="bottom-gradient"></div>
+
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="about-us" id="trailer">
+
+        <div class="warning-sign">
+            <img class="warning-sign sign1" src="img/warning-sign.png" alt="warning-sign">
+            <img class="warning-sign sign2" src="img/warning-sign.png" alt="warning-sign">
+            <img class="warning-sign sign3" src="img/warning-sign.png" alt="warning-sign">
+            <img class="warning-sign sign4" src="img/warning-sign.png" alt="warning-sign">
+            <img class="warning-sign sign5" src="img/warning-sign.png" alt="warning-sign">
+            <img class="warning-sign sign6" src="img/warning-sign.png" alt="warning-sign">
+        </div>
+
+        <!-- SECTION -->
+        <div class="about-cut-text">
+            <div class="left-gradient"></div>
+            <p class="marqueeText">ARE YOU PREPARED FOR THE BIG ONE?</p>
+            <div class="right-gradient"></div>
+        </div>
+
+        <div class="about-content">
+            <div class="Trailer" id="about">
+                <div class="left-content">
+                    <h3>Play. Learn. Prepare</h3>
+                    <p>SURGE is a free-to-play web game that makes tsunami preparedness fun and interactive. Play through the Before, During, and After phases, complete mini-games, and learn life-saving skills based on NDRRMC safety protocols. </p>
+                </div>
+
+                <div class="right-content">
+                    <video src="vid/trailer.mp4" controls autoplay muted loop></video>
+                </div>
+            </div>
+
+            <div class="about-text" >
+                <h3>LEARN MORE</h3>
+                <h1><span class="line"></span> ABOUT SURGE <span class="line"></span></h1>
+                <p><strong>SURGE</strong> is a game-based platform that builds essential tsunami preparedness skills<br>
+                    through accessible 2D gameplay. Developed in collaboration with the <strong>Office of Civil Defense</strong>,<br>
+                    it turns disaster protocols into fun, interactive scenarios that teach through gameplay—<br>
+                    supporting <strong>UN Sustainable Development Goal 11</strong> by promoting safer, more resilient communities.</p>
+            </div>
+
+            <div class="about-container">
+                <div class="about-box">
+                    <div class="box-title">
+                        <img src="img/au_1.png" alt="Learning Approach">
+                        <h3>LEARNING APPROACH</h3>
+                    </div>
+                    <div class="box-text">
+                        <p>SURGE uses <strong>game-based learning</strong> to simplify complex tsunami preparedness protocols through interactive gameplay. Players build disaster preparedness skills and critical thinking by navigating missions, making choices, and learning through active play.</p>
+                    </div>
+                </div>
+                
+                <div class="about-box">
+                    <div class="box-title">
+                        <img src="img/au_2.png" alt="Target Users">
+                        <h3>TARGET USERS</h3>
+                    </div>
+                    <div class="box-text">
+                        <p>Designed for <strong>students</strong>, <strong>young adults</strong>, and <strong>residents in coastal areas</strong>, SURGE makes disaster preparedness accessible, engaging, and relevant—especially for communities at high risk.</p>
+                    </div>
+                </div>
+                
+                <div class="about-box">
+                    <div class="box-title">
+                        <img src="img/au_3.png" alt="Core Features">
+                        <h3>CORE FEATURES</h3>
+                    </div>
+                    <div class="box-text">
+                        <p>SURGE brings disaster prep to life with <strong>2D gameplay</strong>, <strong>downloadable learning resources</strong>, <strong>task-based challenges</strong>, and <strong>accurate safety tips</strong>—all powered by official protocols from the Office of Civil Defense.</p>                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        
+        <div class="warning-sign">
+            <img class="warning-sign sign7" src="img/warning-sign.png" alt="warning-sign">
+            <img class="warning-sign sign8" src="img/warning-sign.png" alt="warning-sign">
+            <img class="warning-sign sign9" src="img/warning-sign.png" alt="warning-sign">
+            <img class="warning-sign sign10" src="img/warning-sign.png" alt="warning-sign">
+            <img class="warning-sign sign11" src="img/warning-sign.png" alt="warning-sign">
+            <img class="warning-sign sign12" src="img/warning-sign.png" alt="warning-sign">
+        </div>
+
+
+        <div class="features-start">
+            <img class="background" src="img/feature-start.png">
+            <h1>The Disaster Preparedness Adventure That Could Save Lives!</h1>
+        </div>
+
+        <div class="features-content">
+            <div class="features-character">
+                <h3>MEET THE SURGE</h3>
+                <h1><span class="line"></span> CHARACTERS <span class="line"></span></h1>
+                <p>Each character plays a role in teaching, guiding, and helping you prepare for any challenge.</p>
+
+                
+                    <div class="character-content">
+                        <div class="character-display">
+                        <img src="" alt="" class="character-image" id="mainCharacter">
+                        </div>
+
+                        <div class="character-info">
+                        <div class="info-card">
+                            <h3 class="character-name" id="characterName"></h3>
+                            <p class="character-description" id="characterDescription"></p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-nav">
+                        <button class="nav-arrow" id="prevBtn" aria-label="Previous character">
+                        <div class="arrow arrow-left"></div>
+                        </button>
+
+                        <div class="thumbnails" id="thumbnails"></div>
+
+                        <button class="nav-arrow" id="nextBtn" aria-label="Next character">
+                        <div class="arrow arrow-right"></div>
+                        </button>
+                    </div>
+            </div>
+    
+         <!-- GALLERY -->
+                <div class="gallery">
+                    <div class="gallery-text">
+                        <h3>EXPLORE THE SURGE</h3>
+                        <h1><span class="line"></span> ENVIRONMENT <span class="line"></span></h1>
+                        <p>Take a sneak peek into the world of <strong>SURGE</strong> — explore missions, challenges, and moments from the game.</p>
+                    </div>
+
+                    <!-- GALLERY CAROUSEL -->
+                    <div class="slideshow-container">
+                        <div class="mySlides active">
+                            <img src="Environment/Bathroom.png" alt="Environment 1">
+                            <div class="text">Bathroom</div>
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Environment/Bedroom.png" alt="Environment 2">
+                            <div class="text">Bedroom</div>
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="Environment/Sala.png" alt="Environment 3">
+                            <div class="text">Living Room</div>
+                        </div>
+                        <div class="mySlides">
+                            <img src="Environment/Kitchen.png" alt="Environment 3">
+                            <div class="text">Kitchen</div>
+                        </div>
+                        <div class="mySlides">
+                            <img src="Environment/Evacuation-Outside.png" alt="Environment 3">
+                            <div class="text">Evacuation Center Outside</div>
+                        </div>
+                        <div class="mySlides">
+                            <img src="Environment/Evacuation Center Inside.png" alt="Environment 3">
+                            <div class="text">Evacuation Center Inside</div>
+                        </div>
+                        <div class="mySlides">
+                            <img src="Environment/Street- Not Damage.png" alt="Environment 3">
+                            <div class="text">Street Before Tsunami</div>
+                        </div>
+                        <div class="mySlides">
+                            <img src="Environment/Street-Damage.png" alt="Environment 3">
+                            <div class="text">Street After Tsunami</div>
+                        </div>
+
+                        <!-- Arrows -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+
+
+                    <!-- Dots -->
+                    <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    </div>
+
+                    
+
+
+                </div>
+                <div id="lightbox" class="lightbox">
+                        <span class="close">&times;</span>
+                        <img class="lightbox-content" id="lightboxImg">
+                        <div id="caption"></div>
+                </div>
+        </div>
+
+       
+
+    </section>
+
+
+    <!-- RESOURCES -->
+    <section class="resources" id="resources">
+
+        <div class="resources-start">
+            <img class="background" src="img/resources-start.png">
+        </div>
+
+        <div class="warning-sign">
+            
+            <img class="warning-sign sign15" src="img/warning-sign.png" alt="warning-sign">
+            <img class="warning-sign sign16" src="img/warning-sign.png" alt="warning-sign">
+            <img class="warning-sign sign17" src="img/warning-sign.png" alt="warning-sign">
+        </div>
+
+        <div class="resources-content">
+            <div class="resources-text">
+                <h1><span class="line"></span> RESOURCES <span class="line"></span></h1>
+                <p><strong>SURGE</strong> provides <strong>easy</strong>, <strong>accessible</strong>, and <strong>informative educational resources</strong> available
+                    for download to support tsunami preparedness and disaster response.</p>
+            </div>
+
+            <div class="resources-container">
+                <div class="resources-box">
+                    <div class="box-title">
+                        <img src="img/rc_1.png" alt="Introducing Tsunami">
+                        <p>Introducing Tsunami</p>
+                    </div>
+                    <div class="box-text">
+                        <p>This infographic explains tsunami, their risks, causes, and how they form. It provides important insights to aid in understanding and preparation.</p>
+
+                        <a href="javascript:void(0)" 
+                            class="download-btn" 
+                            data-file="files/tsunami_info.pdf" 
+                            data-pass="WAVESURVIVOR">
+                            DOWNLOAD<img src="img/btn_download.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resources-box">
+                    <div class="box-title">
+                        <img src="img/rc_2.png" alt="Emergency Plan">
+                        <p>Emergency Plan</p>
+                    </div>
+                    <div class="box-text">
+                        <p>A step-by-step guide to creating a plan for household safety during disasters, including evacuation routes, communication strategies, and safety measures.</p>
+                        <a href="javascript:void(0)" 
+                            class="download-btn" 
+                            data-file="files/tsunami_info.pdf" 
+                            data-pass="READYHERO">
+                            DOWNLOAD<img src="img/btn_download.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resources-box">
+                    <div class="box-title">
+                        <img src="img/rc_3.png" alt="Emergency Bag">
+                        <p>Emergency Bag</p>
+                    </div>
+                    <div class="box-text">
+                        <p>A checklist of essential items to pack, such as food, water, first aid supplies, and important documents, to ensure preparedness for emergencies.</p>
+                        <a href="javascript:void(0)" 
+                            class="download-btn" 
+                            data-file="files/tsunami_info.pdf" 
+                            data-pass="BAGCHAMP">
+                            DOWNLOAD<img src="img/btn_download.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resources-box">
+                    <div class="box-title">
+                        <img src="img/rc_4.png" alt="Safety Tips">
+                        <p>Safety Tips</p>
+                    </div>
+                    <div class="box-text">
+                        <p>Safety tips provide essential guidance on what to do before, during, and after a tsunami. They aim to help protect lives and minimize risks.</p>
+                        <a href="javascript:void(0)" 
+                            class="download-btn" 
+                            data-file="files/tsunami_info.pdf" 
+                            data-pass="SAFETYGUARD">
+                            DOWNLOAD<img src="img/btn_download.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PASSWORD POPUP -->
+                <div id="passwordModal" class="modal">
+                    <div class="modal-content">
+                        <span id="closeModal">&times;</span>
+                        <h2>Enter Password</h2>
+
+                        <div class="password-wrapper">
+                        <input type="password" id="passwordInput" placeholder="Enter password">
+                        <span class="toggle-password" id="togglePassword">&#128065;</span>
+                        </div>
+
+                        <button id="submitPassword">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <p style="font-size: 0.1 rem !important;">To download the materials, simply click the <strong>Download</strong> button.
+                It’s quick, easy, and accessible!</p>
+        </div>
+
+
+    </section>
+
+    <!-- DEVELOPERS -->
+    <section class="developers" id="developers">
+
+        <div class="warning-sign">
+            <img class="warning-sign sign18" src="img/warning-sign.png" alt="warning-sign">
+        </div>
+
+        <div class="developers-content">
+            <div class="developers-text">
+                <h3>MEET THE</h3>
+                <h1><span class="line"></span> DEVELOPERS <span class="line"></span></h1>
+                <p>We’re Team MIR4CLE, a group of Multimedia Arts students from <strong>National University – Manila</strong>,
+                    united by our passion for using game as a tool to educate and inspire. With our diverse creative skills,
+                    we aim to make learning not just informative, but also exciting, impactful, and fun!</p>
+            </div>
+
+            <div class="developers-wrapper">
+
+                <div class="dev">
+                    <div class="role-box">
+                        <p>Hi, I'm Abi!</p>
+                        <img src="img/dev_abi.png" alt="Developer" class="developer-img">
+                    </div>
+                    <div class="role-details">
+                        <p class="name">Abigail Allado</p>
+                        <p class="role">Project Manager, <br> System Lead Developer, <br> & Web Developer</p>
+                    </div>
+                </div>
+                
+                <div class="dev">
+                    <div class="role-box">
+                        <p>Hi, I'm Ricky!</p>
+                        <img src="img/dev_ricky.png" alt="Developer" class="developer-img">
+                    </div>
+                    <div class="role-details">
+                        <p class="name">Richard Meneses</p>
+                        <p class="role">UI Designer, <br> Game Developer, <br> & Web Developer</p>
+                    </div>
+                </div>
+            
+                <div class="dev">
+                    <div class="role-box">
+                        <p>Hi, I'm Fio!</p>
+                        <img src="img/dev_fio.png" alt="Developer" class="developer-img">
+                    </div>
+                    <role class="role-details">
+                        <p class="name">Fiona Martinez</p>
+                        <p class="role"> 2D Artist & <br> Audio Engineer</p>
+                    </role>
+                </div>
+
+                <div class="dev">
+                    <div class="role-box">
+                        <p>Hi, I'm Eia!</p>
+                        <img src="img/dev_eia.png" alt="Developer" class="developer-img">
+                    </div>
+                    <div class="role-details">
+                        <p class="name">Eia Montales</p>
+                        <p class="role">2D Artist & <br> Animator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-img">
+                <img src="img/miracle_logo.png" alt="Logo-white" class="Logo-white">
+            </div>
+
+            <hr>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#resources">Resources</a>
+                <a href="#developers">Developers</a>
+            </div>
+
+            <hr>
+            
+            <div class="footer-social">
+                <h3>Join our adventure—follow us!</h3>
+                <div class="footer-social-icons">
+                    <a href="https://www.facebook.com/share/16pyCVvCD6/?mibextid=wwXIfr" target="_blank"><img src="img/sm_fb.png" alt="Facebook"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="img/sm_x.png" alt="X"></a>
+                    <a href="https://www.instagram.com/surge_tsunami?igsh=bzVicGlzY3p3OGJu&utm_source=qr" target="_blank"><img src="img/sm_insta.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyrights &copy; 2025 MIR4CLE. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="javascript/header.js" defer></script>
+    <script>
+        // HEADER
+        function toggleMenu(hamburger) {
+    const menu = document.querySelector('.header-links ul');
+    menu.classList.toggle('active');
+
+    // Change hamburger icon
+    if (menu.classList.contains('active')) {
+      hamburger.textContent = '✖';  // X when open
+    } else {
+      hamburger.textContent = '☰';  // ☰ when closed
+    }
+  }
+
+  // Lightbox popup
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const captionText = document.getElementById("caption");
+const closeBtn = document.querySelector(".lightbox .close");
+
+// Add click event for each slide image
+let slideImages = document.querySelectorAll(".mySlides img");
+slideImages.forEach(img => {
+  img.addEventListener("click", function() {
+    lightbox.style.display = "block";
+    lightboxImg.src = this.src;
+
+    // ✅ Find caption inside the same slide
+    let parentSlide = this.closest(".mySlides");
+    let captionDiv = parentSlide.querySelector(".text");
+    captionText.innerHTML = captionDiv ? captionDiv.innerText : "";
+  });
+});
+
+// Close lightbox (X button)
+closeBtn.onclick = function() {
+  lightbox.style.display = "none";
+}
+
+// Close if click outside image
+lightbox.addEventListener("click", function(e) {
+  if (e.target === lightbox) {
+    lightbox.style.display = "none";
+  }
+});
+
+
+
+
+        let currentFile = "";
+let currentPass = "";
+
+// open modal when any button is clicked
+document.querySelectorAll(".download-btn").forEach(btn => {
+  btn.addEventListener("click", function() {
+    currentFile = this.dataset.file;
+    currentPass = this.dataset.pass;
+    document.getElementById("passwordModal").style.display = "flex";
+  });
+});
+
+// close modal
+document.getElementById("closeModal").onclick = function() {
+  document.getElementById("passwordModal").style.display = "none";
+  document.getElementById("passwordInput").value = "";
+};
+
+// check password
+document.getElementById("submitPassword").onclick = function() {
+  const entered = document.getElementById("passwordInput").value;
+  if (entered === currentPass) {
+    const link = document.createElement("a");
+    link.href = currentFile;
+    link.download = "";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    alert("✅ Password correct. Download starting...");
+    document.getElementById("passwordModal").style.display = "none";
+    document.getElementById("passwordInput").value = "";
+  } else {
+    alert("❌ Incorrect password!");
+  }
+};
+
+// close modal if clicking outside content
+window.onclick = function(e) {
+  if (e.target.classList.contains("modal")) {
+    document.getElementById("passwordModal").style.display = "none";
+    document.getElementById("passwordInput").value = "";
+  }
+};
+
+// ✅ toggle show/hide password
+document.getElementById("togglePassword").addEventListener("click", function() {
+  const input = document.getElementById("passwordInput");
+  if (input.type === "password") {
+    input.type = "text";
+    this.textContent = "🙈"; // icon changes when visible
+  } else {
+    input.type = "password";
+    this.textContent = "👁️"; // icon changes when hidden
+  }
+});
+
+    </script>
+</body>
+</html>

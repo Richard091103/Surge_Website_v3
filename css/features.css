@@ -1,0 +1,761 @@
+.warning-sign {
+  position: absolute;
+  
+}
+
+/* Individual variations */
+.sign7 {
+  top: 600px;
+  right: -1500px;
+  width: 200px;
+  height: auto;
+  transform: rotate(-20deg);
+  z-index: 10;
+}
+
+.sign8 {
+  top: 800px;
+  right: -1530px;
+  width: 150px;
+  height: auto;
+  transform: rotate(18deg);
+  z-index: 0;
+}
+
+.sign9 {
+  top: 1100px;
+  left: 20px;
+  width: 200px;
+  height: auto;
+  transform: rotate(25deg);
+  z-index: 10;
+}
+
+.sign10 {
+  top: 1300px;
+  left: 20px;
+  width: 150px;
+  height: auto;
+  transform: rotate(-10deg);
+  z-index: 0;
+}
+
+.sign11 {
+  top: 1700px;
+  right: -1500px;
+  width: 200px;
+  height: auto;
+  transform: rotate(-20deg);
+  z-index: 10;
+}
+
+.sign12 {
+  top: 1900px;
+  right: -1500px;
+  width: 150px;
+  height: auto;
+  transform: rotate(18deg);
+  z-index: 0;
+}
+
+
+
+
+/* FEATURES */
+.features-start {
+    position: relative;    /* container for positioning */
+    text-align: center;    /* center text horizontally */
+    color: white;          /* make text visible over image */
+}
+
+.features-start .background {
+    width: 100%;
+    display: block;        /* ensures no inline gap */
+}
+
+.features-start h1 {
+    position: absolute;
+    top: 40%;              
+    left: 50%;             
+    transform: translate(-50%, -50%);
+    width: 90%;                  /* make it span across screen (adjust %) */
+    max-width: 1200px;           /* optional: keep it from being too wide on big screens */
+    text-align: center;          /* center text inside */
+    
+    font-family: "Lilita One", sans-serif !important;
+    font-size: 5.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff !important;
+    text-shadow: #533004 -5px 4px 0;
+    z-index: 1;
+}
+
+
+.features {
+    position: relative;
+    scroll-margin-top: 80px;
+    background-color: #fff1e9;
+    font-family: "Jua", sans-serif;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.features p {
+    margin-top: 15px;
+    font-size: 2rem;
+    color: #533004;
+}
+
+.features h3 {
+    color: #774709a5;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+    margin-top: 0px;
+    margin-bottom: -50px;
+}
+
+.features h1 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    color: #f6991f;
+    margin-bottom: 20px;
+    text-shadow: #533004 -5px 4px 0;
+}
+
+.features-content {
+    padding: 0 20px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;   /* stack vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;       /* center text & video headings */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 1000px;        /* narrower container for balance */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-character {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.features-character h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* space between line and text */
+    font-size: 4rem;
+    font-family: "Lilita One", sans-serif;
+    margin: 50px 0;
+    letter-spacing: 5px;
+}
+
+.features-character .line {
+    height: 3px;              /* thickness of line */
+    background-color: #533004; /* your brand color */
+    border-radius: 3px;
+    width: 150px;
+}
+
+.features-character p {
+  margin-top: -20px;
+  font-size: 1.3rem;
+}
+
+
+/* CHARACTER SHOWCASE */
+    /* Main Content */
+    .character-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;   /* keep them centered together */
+    gap: 1rem;                 /* reduce spacing (was 2rem) */
+    margin-bottom: 50px;
+    }
+
+    .character-display {
+    flex: 0 0 auto;            /* don’t stretch */
+    min-width: 250px;          /* optional: control width */
+    display: flex;
+    justify-content: flex-end; /* push closer to info box */
+    }
+
+    .character-image {
+      width: 400px;
+      height: auto;
+      filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.15));
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .character-image:hover {
+      transform: scale(1.05);
+    }
+
+    .character-info {
+        flex: 0 0 auto;            /* don’t stretch */
+    }
+
+    .info-card {
+      background: linear-gradient(135deg, #ffe4cc 0%, #ffd4b8 100%);
+      border: 4px solid #d97835;
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      height: auto;
+      width: 400px;
+      text-align: center;
+      
+    }
+
+    .character-name {
+      font-size: 3rem !important;
+      font-weight: 700;
+      color: #533004 !important;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+      transition: opacity 0.3s ease;
+      margin-bottom: -10px;
+      font-family: "Lilita One", sans-serif;
+    }
+
+    .character-description {
+      font-size: 1.3rem;
+      color: #5c4a3a;
+      padding-top: 60px;
+      line-height: 1.5;
+      transition: opacity 0.3s ease;
+    }
+
+    /* Carousel Navigation */
+    .carousel-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .nav-arrow {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      transition: transform 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-arrow:hover {
+      transform: scale(1.2);
+    }
+
+    .nav-arrow:active {
+      transform: scale(0.95);
+    }
+
+    .arrow {
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    .arrow-left {
+      border-width: 15px 20px 15px 0;
+      border-color: transparent #5c4a3a transparent transparent;
+    }
+
+    .arrow-right {
+      border-width: 15px 0 15px 20px;
+      border-color: transparent transparent transparent #5c4a3a;
+    }
+
+    .thumbnails {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    .thumbnail {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 4px solid #d97835;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+    }
+
+    .thumbnail:hover {
+      transform: scale(1.1);
+      border-color: #c96628;
+    }
+
+    .thumbnail.active {
+      border-width: 5px;
+      border-color: #5c4a3a;
+      transform: scale(1.15);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .character-display {
+        min-height: auto;
+      }
+
+      .character-image {
+        width: 220px;
+      }
+
+      .info-card {
+        padding: 1.5rem;
+      }
+
+      .character-name {
+        font-size: 2rem;
+      }
+
+      .character-description {
+        font-size: 0.95rem;
+      }
+
+      .thumbnails {
+        flex-wrap: wrap;
+      }
+
+      .thumbnail {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .character-image {
+        width: 180px;
+      }
+
+      .character-name {
+        font-size: 1.5rem;
+      }
+
+      .thumbnail {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+/* GALLERY SECTION */
+/* Slideshow container */
+
+.gallery-text h3 {
+    color: #774709a5;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+    margin-top: 0px;
+    margin-bottom: -50px;
+}
+
+.gallery-text h1 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 4rem;
+    letter-spacing: 5px;   /* reduced spacing for better readability */
+    color: #f6991f;
+    margin-bottom: 20px;
+    text-shadow: #533004 -5px 4px 0;
+}
+
+
+.gallery-text .line {
+    height: 3px;              /* thickness of line */
+    background-color: #533004; /* your brand color */
+    border-radius: 3px;
+    width: 150px;
+    display: inline-block;     /* make the line appear inline with ENVIRONMENT */
+    margin: 0 10px;            /* spacing between text and line */
+    vertical-align: middle;    /* align with text */
+}
+
+.gallery-text p{
+  font-size: 1.3rem;
+  padding: 20px;
+}
+
+
+.mySlides {
+  position: absolute;          /* stack slides */
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;                  /* hidden by default */
+  transition: opacity 0.8s ease-in-out; /* smooth fade */
+  pointer-events: none;        /* prevent interaction when invisible */
+  background: none !important;
+}
+
+.mySlides.active {
+  opacity: 1;                  /* fade in */
+  pointer-events: auto;        /* clickable only when active */
+  position: relative;          /* keeps active slide in flow */
+}
+
+.mySlides img {
+  width: 80%;       /* or 80% if you want */
+  height: auto;
+  border: #bf7615 8px solid;
+}
+
+.mySlides .text {
+  position: absolute;
+  bottom: 20px;          /* move up a bit from bottom */
+  left: 50%;
+  transform: translateX(-50%); /* perfectly center horizontally */
+
+  font-size: 1.2rem;
+  font-family: 'Lilita One', sans-serif;
+  text-transform: uppercase;   /* ✅ correct syntax */
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 3px;
+
+
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+  padding: 10px 20px;
+
+  display: inline-block;  /* keeps background tight around text */
+  text-align: center;
+  max-width: 76%;         /* avoids stretching too wide */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  bottom: 15px;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);  /* perfect vertical centering */
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s ease;
+
+  background: rgba(0,0,0,0.4);
+  user-select: none;
+  z-index: 10; /* ensure arrows stay above the image */
+}
+
+/* Position left arrow */
+.prev {
+  left: 0px;
+}
+
+/* Position right arrow */
+.next {
+  right: 0px;
+}
+
+/* On hover */
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 20px;
+  background-color: #b38958;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+  
+}
+
+.dot.active, 
+.dot:hover {
+  background-color: #371f02;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+
+#caption {
+  margin: 15px auto;
+  text-align: center;
+  color: #ccc;
+  font-size: 1.2rem;
+  font-family: 'Lilita One', sans-serif;
+  text-transform: uppercase;   /* ✅ correct syntax */
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Close button */
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.lightbox .close:hover {
+  color: #f6991f;
+}
+
+/* Animation */
+@keyframes zoom {
+  from {transform: scale(0.8);}
+  to {transform: scale(1);}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+/* ---------- TABLET (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  .features-start h1 {
+    font-size: 2rem !important;
+    line-height: 1.2;
+  }
+
+  .character-image {
+    width: 400px !important;
+  }
+
+  .character-name {
+    font-size: 2.5rem !important;
+    margin: 20px 20px !important;
+  }
+
+  .info-card {
+    width: 300px;
+  }
+
+  .features-character h1 {
+    font-size: 3rem !important;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .gallery-text h1 {
+    font-size: 3rem !important;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .mySlides img {
+    width: 90%; /* bigger relative to container */
+  }
+  .features-character .line {
+    display: none !important;
+  }
+
+  .gallery-text .line {
+    display: none !important;
+  }
+}
+
+/* ---------- MOBILE (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .features-start h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
+
+  .character-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .character-display {
+    justify-content: center;
+  }
+
+  .character-image {
+    width: 220px;
+  }
+
+  .info-card {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .character-name {
+    font-size: 2rem;
+  }
+
+  .character-description {
+    padding-top: 20px;
+    font-size: 1rem;
+  }
+
+  .features-character h1 {
+    font-size: 2.2rem;
+    gap: 10px;
+  }
+
+  .gallery-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .gallery-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .mySlides img {
+    width: 100%;
+    border-width: 5px;
+  }
+
+  .prev, .next {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .prev {
+  left: 20px;
+}
+
+/* Position right arrow */
+.next {
+  right: 10px;
+}
+}
+
+/* ---------- SMALL MOBILE (≤ 480px) ---------- */
+@media (max-width: 480px) {
+  .features-start h1 {
+    font-size: 1.8rem;
+  }
+
+  .character-image {
+    width: 180px;
+  }
+
+  .character-name {
+    font-size: 1.4rem;
+  }
+
+  .character-description {
+    font-size: 0.9rem;
+  }
+
+  .thumbnail {
+    width: 50px;
+    height: 50px;
+  }
+
+  .gallery-text h1 {
+    font-size: 2rem;
+  }
+
+  .dot {
+    height: 12px;
+    width: 12px;
+  }
+}

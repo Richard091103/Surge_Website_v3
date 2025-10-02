@@ -1,0 +1,420 @@
+/* Base style for all warning signs */
+.warning-sign {
+  position: absolute;
+  
+}
+
+/* Individual variations */
+.sign1 {
+  top: 50px;
+  right: -1500px;
+  width: 200px;
+  height: auto;
+  transform: rotate(-20deg);
+  z-index: 10;
+}
+
+.sign2 {
+  top: 220px;
+  right: -1550px;
+  width: 150px;
+  height: auto;
+  transform: rotate(18deg);
+  z-index: 0;
+}
+
+.sign3 {
+  top: 600px;
+  left: 20px;
+  width: 200px;
+  height: auto;
+  transform: rotate(25deg);
+  z-index: 10;
+}
+
+.sign4 {
+  top: 800px;
+  left: 20px;
+  width: 150px;
+  height: auto;
+  transform: rotate(-10deg);
+  z-index: 0;
+}
+
+.sign5 {
+  top: 1100px;
+  right: -1500px;
+  width: 200px;
+  height: auto;
+  transform: rotate(-20deg);
+  z-index: 10;
+}
+
+.sign6 {
+  top: 1300px;
+  right: -1500px;
+  width: 150px;
+  height: auto;
+  transform: rotate(18deg);
+  z-index: 0;
+}
+
+
+
+.about-cut-text {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #f6991f;
+  overflow: hidden;
+  position: relative;   /* important → makes .warning-sign anchor here */
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+
+
+
+.about-cut-text p {
+  white-space: nowrap;
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  will-change: transform;
+  font-family: "Lilita One", sans-serif;
+  letter-spacing: 2px;
+  z-index: 2;
+
+  transform: translateX(100%); /* start fully off screen to the right */
+}
+
+
+.about-cut-text .left-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px; /* adjust as needed for the fade width */
+    height: 100%;
+    background: linear-gradient(to right, #5d3900, transparent);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.about-cut-text .right-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px; /* adjust as needed for the fade width */
+    height: 100%;
+    background: linear-gradient(to left, #5d3900, transparent);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.about-us {
+    position: relative;
+    background-color: #fff1e9;
+    font-family: "Jua", sans-serif;
+    scroll-margin-top: 35px;
+    padding-bottom: 100px; /* extend space at bottom */
+}
+
+
+.about-content {
+    padding: 0 20px 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
+}
+
+.about-text {
+    scroll-margin-top: 80px;
+    
+}
+
+
+.about-text h3 {
+    color: #774709a5;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+    margin-top: 0px;
+    margin-bottom: -50px;
+}
+
+.about-text h1 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 4rem;
+    letter-spacing: 5px;   /* reduced spacing for better readability */
+    color: #f6991f;
+    margin-bottom: 20px;
+    text-shadow: #533004 -5px 4px 0;
+}
+
+.about-text p {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: #533004;
+    line-height: 1.3;
+}
+
+.about-text .line {
+    height: 3px;              /* thickness of line */
+    background-color: #533004; /* your brand color */
+    border-radius: 3px;
+    width: 150px;
+    display: inline-block;     /* make the line appear inline with ENVIRONMENT */
+    margin: 0 10px;            /* spacing between text and line */
+    vertical-align: middle;    /* align with text */
+    width: clamp(60px, 15vw, 100px); 
+}
+
+
+/* TRAILER SECTION */
+.Trailer {
+    display: flex;
+    align-items: center;            /* vertically align left & right */
+    justify-content: space-between; /* push apart left and right */
+    gap: 2rem;                      /* spacing between text and video */
+    padding: 5rem;
+}
+
+.Trailer .left-content {
+    flex: 1;                        /* allow flexible width */
+    max-width: 600px;               /* keep text readable */
+}
+
+.Trailer .left-content h3 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 5rem;
+    letter-spacing: 2px;
+    color: #f6991f;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: #533004 -5px 4px 0;
+    text-align: left;
+}
+
+.Trailer .left-content p {
+    font-size: 1.5rem;
+    color: #533004;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.Trailer .right-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;        /* center the video horizontally */
+    max-width: 900px;
+    z-index: 5;
+}
+
+.Trailer .right-content video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px #533004;
+    border: 10px solid #ffb254;   /* adjust thickness & color */
+}
+
+
+/* ABOUT CONTAINER */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 10px;
+
+}
+
+/* ABOUT BOX */
+.about-box {
+    background-color: #ffffff;
+    width: 280px;
+    height: auto;
+    border-radius: 15px;
+    z-index: 1;
+    gap: 10px;
+    box-shadow: 0 4px 20px #532f0492;
+}
+
+.about-box .box-text p {
+    color: #1d0d01;
+    text-shadow: none;
+    font-size: 1rem;
+    margin: 20px;
+}
+
+.about-box .box-title {
+    padding: 15px;
+    background-color: #ffa334;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.about-box .box-title h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.about-box .box-title img {
+    width: 84px;
+    height: 84px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* ABOUT BOX (HOVERS) */
+.about-box:hover {
+    box-shadow: 0px 0px 15px #533004;
+}
+
+
+/* =====================
+   RESPONSIVE BREAKPOINTS
+   ===================== */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .Trailer {
+    flex-direction: column;      /* stack text and video vertically */
+    padding: 3rem 2rem;          /* reduce padding */
+    gap: 2rem;
+    text-align: center;          /* center text */
+  }
+
+  .Trailer .left-content h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .Trailer .left-content p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .Trailer .right-content {
+    max-width: 100%;
+  }
+
+  .about-container {
+    flex-wrap: wrap;             /* allow wrapping */
+    justify-content: center;     /* center boxes */
+    gap: 20px;
+  }
+
+  .about-box {
+    width: 20%;                  /* two boxes per row */
+    min-width: 200px;
+  }
+
+  .warning-sign {
+    display: none !important;
+  }
+
+  .about-text .line {
+    display: none !important;
+  }
+
+  .about-cut-text p {
+    font-size: 2rem !important;           /* smaller scrolling text */
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .about-cut-text p {
+    font-size: 1.3rem;           /* smaller scrolling text */
+  }
+
+  .about-text h3 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+
+  .about-text h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-top: 50px;
+  }
+
+  .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .Trailer {
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .Trailer .left-content h3 {
+    font-size: 2.5rem;
+  }
+
+  .Trailer .left-content p {
+    font-size: 1.2rem;
+  }
+
+  .about-container {
+    flex-direction: column;      /* stack boxes */
+    align-items: center;
+  }
+
+  .about-box {
+    width: 90%;
+  }
+}
+
+/* Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .about-cut-text {
+    height: 60px;                /* smaller banner */
+  }
+
+  .about-cut-text p {
+    font-size: 1rem;
+  }
+
+.about-text .line {
+    display: none;
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .Trailer .left-content h3 {
+    font-size: 2rem;
+  }
+
+  .Trailer .left-content p {
+    font-size: 1rem;
+  }
+
+  .about-box .box-text p {
+    font-size: 1rem;
+    margin: 15px;
+  }
+
+  .about-box .box-title h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-box .box-title img {
+    width: 64px;
+    height: 64px;
+  }
+}

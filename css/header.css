@@ -1,0 +1,143 @@
+/* BASE HEADER (Desktop & Large Screens) */
+.header-container {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.header-links ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-links a {
+    font-family: 'Jua', sans-serif;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    letter-spacing: 2px;
+}
+
+.header-links a:hover {
+    color: #f6991f;
+}
+
+/* underline hover effect */
+.header-links .links::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #FFFFFF;
+    display: block;
+    margin: auto;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    border-radius: 100px;
+}
+
+.header-links .links:hover::after {
+    width: 100%;
+    background-color: #2f1901;
+}
+
+/* GLASS EFFECT ON SCROLL */
+.header.scrolled {
+    background: rgba(129, 129, 129, 0.397);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header.scrolled .header-links a {
+    color: #FFFFFF;
+}
+
+.header.scrolled .header-links a:hover {
+    color: #f6991f;
+}
+
+/* 📱 RESPONSIVE BREAKPOINTS */
+/* Default: hide hamburger on desktop */
+.hamburger {
+  display: none;
+  margin-left: 88%;  /* pushes it to the far right */
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 200;
+}
+
+/* Tablet + Mobile */
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  /* Show hamburger only on small screens */
+  .hamburger {
+    display: block;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  /* Fullscreen nav */
+  .header-links ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* full screen */
+    
+    background: rgba(0, 0, 0, 0.648);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+
+    display: none; /* hidden by default */
+    z-index: 150;
+  }
+
+  .header-links ul.active {
+    display: flex; /* show when hamburger clicked */
+  }
+
+  /* Bigger nav links for fullscreen */
+  .header-links a {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .header-links a:hover {
+    color: #f6991f;
+  }
+}
