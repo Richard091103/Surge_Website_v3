@@ -13,12 +13,6 @@ window.addEventListener("scroll", function() {
     }
 });
 
-
-  
-
-
-
-
 /*FEATURE TEXT ANIMATION*/
 document.addEventListener("DOMContentLoaded", () => {
   const texts = document.querySelectorAll(".marqueeText");
@@ -211,4 +205,5 @@ function showSlides(n) {
   slides[slideIndex].classList.add("active");
   dots[slideIndex].classList.add("active");
 }
+
 
