@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   {
     name: "BOY MAIN CHARACTER",
     description: "The boy main character represents a typical Filipino teenager living in a coastal community. He embodies the role of youth who must learn, prepare, and act during disasters, making his journey relatable to many players.",
-    image: "character_img/boy-mc-full_Body.png",      // main big image
+    image: "character_img/boy-mc-full-Body.png",      // main big image
     thumbnail: "character_img/boy-mc-thumbnail.png"     // thumbnail small circle
   },
   {
@@ -205,5 +205,6 @@ function showSlides(n) {
   slides[slideIndex].classList.add("active");
   dots[slideIndex].classList.add("active");
 }
+
 
 
