@@ -13,6 +13,12 @@ window.addEventListener("scroll", function() {
     }
 });
 
+
+  
+
+
+
+
 /*FEATURE TEXT ANIMATION*/
 document.addEventListener("DOMContentLoaded", () => {
   const texts = document.querySelectorAll(".marqueeText");
@@ -52,8 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
   {
     name: "BOY MAIN CHARACTER",
     description: "The boy main character represents a typical Filipino teenager living in a coastal community. He embodies the role of youth who must learn, prepare, and act during disasters, making his journey relatable to many players.",
-    image: "character_img/boy-mc-full-body.png",      // main big image
+    image: "character_img/boy-mc-full_Body.png",      // main big image
     thumbnail: "character_img/boy-mc-thumbnail.png"     // thumbnail small circle
+  },
+  {
+    name: "GIRL MAIN CHARACTER",
+    description: "The girl main character represents a typical Filipino teenager living in a coastal community. She reflects the strength and resilience of the youth, showing how young people can take an active role in disaster preparedness.",
+    image: "character_img/girl-mc-full_body.png",      // main big image
+    thumbnail: "character_img/girl-mc-thumbnail.png"     // thumbnail small circle
   },
   {
     name: "NANAY",
@@ -70,19 +82,19 @@ document.addEventListener("DOMContentLoaded", () => {
   {
     name: "TOTOY",
     description: "Totoy is the friendly companion of the main character, always cheerful and curious. He reflects the simple look of a Filipino kid, His playful spirit makes him a loyal friend who is ready to share both fun and challenges.",
-    image: "character_img/totoy-full_Body.png",      // main big image
+    image: "character_img/totoy-full_body.png",      // main big image
     thumbnail: "character_img/totoy-thumbnail.png"     // thumbnail small circle
   },
   {
     name: "EVACUATION OFFICER 1",
     description: "The Rescue Evacuation Officer wears a light blue shirt, red vest, ID badge, and dark slacks, symbolizing the professionalism and dedication of frontliners who guide families to safety in emergencies.",
-    image: "character_img/officer1-full_Body.png",      // main big image
+    image: "character_img/officer1-full_body.png",      // main big image
     thumbnail: "character_img/officer1-thumbnail.png"     // thumbnail small circle
   },
   {
     name: "EVACUATION OFFICER 2",
     description: "The Rescue Evacuation Officer wears a light blue shirt, red vest, ID badge, and dark slacks, symbolizing the professionalism and dedication of frontliners who guide families to safety in emergencies.",
-    image: "character_img/officer2-full_Body.png",      // main big image
+    image: "character_img/officer2-full_body.png",      // main big image
     thumbnail: "character_img/officer2-thumbnail.png"     // thumbnail small circle
   }
 ];
@@ -199,7 +211,4 @@ function showSlides(n) {
   slides[slideIndex].classList.add("active");
   dots[slideIndex].classList.add("active");
 }
-
-
-
 
